@@ -148,7 +148,7 @@ suite('Functional Tests', () => {
             .end((err, res) => {
                 assert.equal(res.status, 200);
                 assert.property(res, 'body');
-                assert.equal(res.body.error, "Required field missing");
+                assert.equal(res.body.error, "Required field(s) missing");
                 done();
             })
     });

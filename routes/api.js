@@ -30,7 +30,7 @@ module.exports = function (app) {
             req.body.value === ''
         ) {
             log.error('Field(s) missing from puzzle')
-            res.json({error: 'Required field missing'});
+            res.json({error: 'Required field(s) missing'});
         } else {
 
             try {
